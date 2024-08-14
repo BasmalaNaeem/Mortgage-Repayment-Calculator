@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="./Task_1.css">
+</head>
+<body>
+    <div class="split-screen">
+        <div class="left-section">
+            <div class="container">
+                <header>
+                    <h2>Mortgage Calculator</h2>
+                    <button id="clearbtn">Clear All</button>
+                </header>
+                <form id="mortgageForm">
+                    <div class="form-group">
+                        <label for="MortgageInput">Mortgage Amount</label>
+                        <div class="input-wrapper">
+                            <span class="input-addon">$</span>
+                            <input type="number" id="MortgageInput" name="Mortgage" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="TermInput">Mortgage Term</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="TermInput" name="term" required>
+                                <span class="input-addon">years</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="RateInput">Interest Rate</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="RateInput" name="rate" step="0.01" required>
+                                <span class="input-addon">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox-container">
+                        <label>Mortgage Type</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="Checkbox1">
+                            <label for="Checkbox1">Repayment</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="Checkbox2">
+                            <label for="Checkbox2">Interest Only</label>
+                        </div>
+                    </div>
+                    <button type="submit" id="repaybtn"><img src="./icon-calculator.svg">Calculate Repayments</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="./illustration-empty.svg">
+            <h3>Results Shown Here</h3>
+            <p>Complete the form and click "Calculate repayments" to see what your monthly repayments would be.</p>
+        </div>
+    </div>
+
+    <script src="./Task_1.js"></script>
+</body>
+</html>
+
